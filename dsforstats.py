@@ -19,7 +19,9 @@ print("")
 
 # Question 2
 print("Q: Find the probability of getting 3 heads when you toss 10 fair coins.")
-p_3_heads = C.combinations(10, 2) / 2**10
+
+#previously wrongly created
+p_3_heads = C.combinations(10, 3) / 2**10
 print("A: The probability is {}".format(p_3_heads))
 expected_p_3_heads = 0.1171875
 test_close(p_3_heads, expected_p_3_heads)
