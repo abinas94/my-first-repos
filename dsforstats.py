@@ -32,4 +32,12 @@ p_atmost_2heads = (C.combinations(10, 0) / 2**10) +(C.combinations(10, 1) / 2**1
 expected_p_atmost_2heads =0.0546875
 test_close(p_atmost_2heads,expected_p_atmost_2heads)
 print("")
+
+#question 4
+print("Q: Find the probability of getting at most 3 heads when you toss 10 fair coins.")
+p_atmost_3heads = (C.combinations(10, 0) / 2**10) +(C.combinations(10, 1) / 2**10) +(C.combinations(10, 2) / 2**10) +(C.combinations(10, 3) / 2**10)
+expected_p_atmost_2heads =0.0546875
+test_close(p_atmost_2heads,expected_p_atmost_2heads)
+print("")
+ 
  
